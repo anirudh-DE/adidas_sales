@@ -15,8 +15,8 @@ The dataset (`Adidas US Sales Datasets.xlsx`) contains sales transactions for Ad
 
 ## Project Architecture
 1. **AWS S3**: Stores raw data (`s3://adidas-buckets3/raw/`) and processed data (`s3://adidas-buckets3/processed/`).
-2. **AWS Glue**: Extracts data from S3, performs transformations (e.g., handling missing values, standardizing data, correcting calculations), and writes Parquet files to S3.
-3. **Amazon Redshift**: Loads the processed Parquet data into a data warehouse for querying.
+2. **AWS Glue**: Extracts data from S3, performs transformations (e.g., handling missing values, standardizing data, correcting calculations), and writes to S3.
+3. **Amazon Redshift**: Loads the processed data into a data warehouse for querying.
 4. **Tableau**: Connects to Redshift to create two interactive dashboards:
    - **Dashboard 1**: 2020-2021 sales across the US.
 
@@ -30,13 +30,13 @@ The dataset (`Adidas US Sales Datasets.xlsx`) contains sales transactions for Ad
 ## Key Features
 - **Data Pipeline**:
   - Extracts raw Excel data from S3.
-  - Transforms data using Glue (e.g., type conversion, deduplication, standardization).
+  - Transforms data using Glue jobs (e.g., type conversion, deduplication, standardization).
   - Loads data into Redshift using the `COPY` command.
 - **Dashboards**:
   - Visualizations: Top products by sales (bar chart), top states/cities (pie chart), most popular retailers (bar chart), top products by units sold (pie chart), and KPI metrics.
   - Total sales: $900M (entire dataset)
   - Average price per product: $45.22 (entire dataset)
-  - 
+    
 ### Prerequisites
 - AWS Account with permissions for S3, Glue, Redshift.
 - Tableau Desktop or Tableau Public.
