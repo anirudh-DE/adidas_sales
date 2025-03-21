@@ -44,4 +44,4 @@ The dataset (`Adidas US Sales Datasets.xlsx`) contains sales transactions for Ad
 - Python (for local testing of Glue scripts).
 
 ### Dashboard
-![Image](https://github.com/user-attachments/assets/53a635d3-0541-4cda-9546-1b2f3f005bd5)
+![Image](https://github.com/user-attachments/assets/f0d97fc1-ed0a-43df-ba84-761f7e8d6afe)
