@@ -42,3 +42,6 @@ The dataset (`Adidas US Sales Datasets.xlsx`) contains sales transactions for Ad
 - Tableau Desktop or Tableau Public.
 - Redshift JDBC driver (for Glue-to-Redshift connection).
 - Python (for local testing of Glue scripts).
+
+### Dashboard
+![Image](https://github.com/user-attachments/assets/53a635d3-0541-4cda-9546-1b2f3f005bd5)
